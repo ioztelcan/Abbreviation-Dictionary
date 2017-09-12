@@ -1,0 +1,15 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>We love abbreviations!</title>
+    {% endif %}
+  </head>
+  <body>
+  <h1>Search results for "{{ query }}":</h1>
+    {% for r in results %}
+      <li><strong>{{ r.name }}: </strong>{{ r.description }}</li>
+    {% endfor %}
+  </body>
+</html>

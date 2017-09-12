@@ -1,0 +1,16 @@
+# All txt files are ignored to keep db input/output files local
+*.txt
+
+# All database files containing info are ignored, confidential information should be kept local
+*.db
+BACKUPS/DB Files/db_repository
+Database/db_repository
+
+# Backup folder for various stuff is also kept local, no trash on the repo.
+BACKUPS/
+
+# Others
+.idea/
+*.pyc
+
+
